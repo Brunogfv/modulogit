@@ -8,6 +8,49 @@
 </head>
 <body>
     <h1>Primeiro teste de Git</h1>
-    <p>Este é um teste de commit do GIT no curso da B7Web, com o professor Bonieky Lacerda</p>
+    <p>Teste de envio do Git para o GitHub</p>
+    <form action="dbbruno.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="country" value="BR">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="">
+                Primeiro Nome:<br/>
+                <input type="text" name="name" id="name" required minlength="4">
+            </label><br>
+            <label for="">
+                Sobrenome:<br/>
+                <input type="text" name="lastename" required>
+            </label><br>
+            <label for="">
+                E-mail:<br/>
+                <input type="text" name="email" required pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Endereço de E-mail">
+            </label><br>
+            <label for="">
+                Idade:<br/>
+                <input type="number" name="age" required min="18" max="120">
+            </label><br>
+            <label for="">
+                Data de Nascimento:<br/>
+                <input type="date" name="birthday" required min="2021-06-14">
+            </label><br>
+            <label for="">
+                Foto:<br/>
+                <input type="file" name="foto" accept="image/*">
+            </label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="">
+                Nome da Empresa:<br/>
+                <input type="text" name="companyjobtitle">
+            </label><br>
+            <label for="">
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle">
+            </label><br>
+        </fieldset>
+            <input type="submit" value="Cadastrar">
+        
+    </form>
 </body>
 </html>
